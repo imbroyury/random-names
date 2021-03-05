@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  random-names-page:
+    image: imbro/random-names-page:v1
+    environment: 
+      - RANDOM_NAME_API_HOST=random-names-api
+      - RANDOM_NAME_API_PORT=3000
+    ports:
+      - "8000:8000"
+  random-names-api:
+    image: imbro/random-names-api:v1
