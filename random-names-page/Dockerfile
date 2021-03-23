@@ -8,6 +8,6 @@ WORKDIR /app
 
 RUN npm ci
 
-EXPOSE 80
+EXPOSE 8000
 
 ENTRYPOINT [ "npm", "start" ]
